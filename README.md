@@ -1,6 +1,13 @@
 xmonad-utils
 ============
 
+Fork by aktau: I just needed hhp, which is a cool alternative to
+unclutter, and the rest was not compiling properly with Debian Wheezy's
+default haskell-platform, so I disabled hxsel, hslock and hmanage and
+fixed hhp so it compiled. I also changed the cursor timeout value in hhp
+from 10 to 1 seconds.
+
+
 A small collection of X utilities useful when running XMonad. It includes:
 
 * hxsel, which returns the text currently in the X selection;
