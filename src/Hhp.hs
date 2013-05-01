@@ -58,7 +58,7 @@ waitForMotion d w = do
     where
       -- interrupt the waiting for motion (and thus hide the pointer)
       timer t = do
-        waitASecond 10
+        waitASecond 1
         throwTo t (ErrorCall "done")
       -- wait for the next motion, and restart the timer (?)
       stopAndWait t = do
